@@ -1,6 +1,9 @@
+# INTRO
 print("Welcome to the Tic Tac Toe Game! ")
 print('*'*100,'\n','RULES:','\n','The game is to be played by two players','\n','Each player moves in alternate turns','\n','First one to reach three in a row horizontally, vertically or diagonally is the winner')
 print('*'*100)
+
+# CHOICE FOR X OR O
 def welcome():
     turn = ''
     while turn != 'X' or turn != 'O':
@@ -12,12 +15,15 @@ def welcome():
         else:
             print('Enter a valid value')
 sign = welcome()
+
+# TEMP BOARD WHICH WE CAN REMOVE LATER
 def whole():
     board1 = '[1,2,3]'
     board2 = '[4,5,6]'
     board3 = '[7,8,9]'
     print(board1,board2,board3, sep='\n')
-
+    
+# MAIN CMDS
     def cmds():
         new = ()
         counter = 1
